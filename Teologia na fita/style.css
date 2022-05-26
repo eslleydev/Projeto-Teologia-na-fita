@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Ubuntu&display=swap');
+
+/* reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.logo span{
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.logo span:nth-child(1) {    
+    font-weight: 700;
+    color: rgba(32, 32, 32, .9);    
+}
+.logo span:nth-child(2) {    
+    font-weight: 900;
+    color: rgba(16, 127, 152, .7);    
+}
+
+/* navbar */
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    height: 80px;
+    width: 100vw;
+    line-height: 80px;
+    background: #fff;
+    padding: 0 30px;
+}
+
+.navigation-items ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 2em;
+    font-size: 1em;    
+}
+
+.navigation-items ul li a{
+    text-decoration: none;
+    color: #000;
+    transition: .3s;    
+}
+
+.navigation-items ul li a:hover {
+    color: rgba(16, 127, 152, .7);
+    letter-spacing: 2px;
+}
+
+
+/* social media */
+
+.social-media ul {
+    display: flex;
+    gap: 30px;    
+}
+
+.social-media ul li {
+    list-style: none;
+}
+
+.social-media ul li a {
+    text-decoration: none;
+    color: rgba(16, 156, 148, 1);
+}
+
+.social-media ul li a ion-icon {
+    font-size: 1.1em;
+    color: rgba(16, 127, 152, .7);
+    transition: .5s;
+}
+
+.social-media ul li a ion-icon:hover {
+    color: #ff9600; 
+    font-size: 1.5em;   
+}
+
+/* main */
+.banner-header {
+    height: 500px;
+    width: 100vw;
+    background-image: url(assets/fundo-1.png);
+    background-size: cover;
+    position: relative;
+}
+
+.banner-header-content {
+    height: 500px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    pointer-events: none;
+}
+
+.banner-header-content h1 {
+    color: rgba(16, 127, 152, .7);
+    font-size: 4.5em;
+}
+
+.banner-header-content p {
+    color: #fff;
+    font-size: 4.5em;
+}
+
+.logo-banner {
+    position: absolute;
+    right: 0;
+    margin: 20px 30px;
+    background-image: url(assets/banner3.jpg);
+    background-size: cover;
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;    
+}
+
+.newsletter {
+    background: rgba(48, 80, 87, 1);
+    position: relative;
+    height: 300px;
+    width: 100vw;
+    padding: 20px;
+    display: flex;
+}
+
+.banner-newsletter {    
+    background-image: url(assets/banner-article-1.png);
+    background-size: cover;
+    border-radius: 5px;
+    width: 150px;
+    height: 270px;
+    margin-left: 10%;
+    
+}
+
+.banner-article {
+    display: flex;
+}
+
+.banner-article p {
+    width: 250px;
+    margin: 0 20px;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 600;
+    pointer-events: none;
+}
+
+.subscription {
+    padding: 50px 50px;
+}
+
+.subscription h4 {
+    font-size: 1em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: rgba(16, 156, 148, 1);
+    /* text-shadow: 1px 1px 1px rgba(32, 32, 32, .9); */ /*definindo*/
+    pointer-events: none;
+}
+
+.subscription input {
+    height: 50px; 
+    width: 450px;
+    padding: 0 20px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color: rgb(0, 3, 3);
+    font-size: 1em;
+    font-weight: 300;
+    transition: .5s;
+}
+
+.subscription input:hover {
+    box-shadow: 1px 2px 2px #ff9600;
+}
+
+.subscription button {
+    height: 50px;
+    width: 150px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: #ff9600;
+    color: #fff;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.subscription p {
+    width: 450px;
+    margin: 10px 0;
+    color: #fff;
+    font-size: 0.78em;
+    font-weight: 400;
+    pointer-events: none;
+}
+
+main {
+    height: 400px;
+    width: 100vw;
+    margin: 60px 0;    
+}
+
+main h2 {
+    text-align: center;
+    color: rgba(16, 156, 148, 1);
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    pointer-events: none;
+}
+
+.meet-us-article {
+    display: flex;
+    padding: 10px 50px;
+}
+
+.banner-meet-us {
+    background-image: url(assets/banner-2.jpg);
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+}
+
+.meet-us-article p {
+    width: 80%;
+    margin-left: 50px;
+    pointer-events: none;
+}
+
+/* estudando modelos */
+
+.video {
+    height: 500px;
+}
+
+/* praticamente igual ao main h2 (trabalhar na otimização) */
+.videos h3 {    
+    text-align: center;
+    color: rgba(16, 156, 148, 1);
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    pointer-events: none;
+    margin-top: 20px;
+}
+
+.videos-container {
+    display: flex;
+    justify-content: center;
+}
+.video1 video {    
+    width: 400px; 
+    height: 400px;   
+}
+
+.video2 video {
+    height: 200px;
+    width: 500px;
+    display: flex;
+}
